@@ -2,7 +2,7 @@
 tap "homebrew/cask"
 
 brew "go"
-brew "go-task"
+brew "go-task/tap/go-task"
 brew "bzip2"
 brew "coreutils"
 brew "helm"
@@ -29,7 +29,6 @@ brew "openldap"
 
 cask "google-chrome"
 cask "firefox"
-cask "firefox-developer-edition"
 cask "alfred"  # check license
 cask "bartender"  # check licensen
 cask "box-sync"
@@ -60,7 +59,4 @@ cask "vlc"
 cask "vnc-viewer"
 cask "wireshark"
 cask "zoom"
-
-
-
 
