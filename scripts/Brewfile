@@ -1,0 +1,66 @@
+# 'brew tap'
+tap "homebrew/cask"
+
+brew "go"
+brew "go-task"
+brew "bzip2"
+brew "coreutils"
+brew "helm"
+brew "jq"
+brew "curl"
+brew "git"
+brew "direnv"
+brew "fish"
+brew "zsh"
+brew "wget"
+brew "kubernetes-cli"
+brew "libssh2"
+brew "rbenv"
+brew "telnet"
+brew "vim"
+# python/pyenv dependencies
+brew "zlib"
+brew "readline"
+brew "sqlite3"
+brew "openssl"
+brew "xz"
+
+brew "openldap"
+
+cask "google-chrome"
+cask "firefox"
+cask "firefox-developer-edition"
+cask "alfred"  # check license
+cask "bartender"  # check licensen
+cask "box-sync"
+cask "discord"
+cask "docker"
+cask "dropbox"
+cask "flux"
+cask "gns3"
+cask "iterm2"
+cask "microsoft-remote-desktop"
+cask "logitech-presentation"
+cask "kindle"
+cask "paragon-ntfs"  # check license
+cask "onedrive"
+cask "path-finder"  # check license
+cask "postman"
+cask "scroll-reverser"
+cask "signal"
+cask "slack"
+cask "spotify"
+cask "telegram"
+cask "the-unarchiver"
+cask "protonmail-bridge"
+cask "visual-studio-code"
+cask "virtualbox"
+cask "vagrant"
+cask "vlc"
+cask "vnc-viewer"
+cask "wireshark"
+cask "zoom"
+
+
+
+
