@@ -1,8 +1,9 @@
 # 'brew tap'
 tap "homebrew/cask"
+tap "go-task/tap"
 
 brew "go"
-brew "go-task/tap/go-task"
+brew "go-task"
 brew "bzip2"
 brew "coreutils"
 brew "helm"
