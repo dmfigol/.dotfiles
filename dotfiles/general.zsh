@@ -1,6 +1,6 @@
 source ~/.iterm2_shell_integration.zsh
 unsetopt prompt_cr prompt_sp
-eval "$(pyenv init - --no-rehash)"
+eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
@@ -12,6 +12,9 @@ if [ -f '/Users/dmfigol/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dmfigol
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/dmfigol/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dmfigol/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="${HOME}/.local/bin:$PATH"
+
 
 # if [ -s "$HOME/.nvm/nvm.sh" ]; then
 #   export NVM_DIR="$HOME/.nvm"

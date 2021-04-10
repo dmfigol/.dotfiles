@@ -19,6 +19,7 @@ brew "libssh2"
 brew "rbenv"
 brew "telnet"
 brew "vim"
+brew "openldap"
 # python/pyenv dependencies
 brew "zlib"
 brew "readline"
@@ -26,12 +27,10 @@ brew "sqlite3"
 brew "openssl"
 brew "xz"
 
-brew "openldap"
-
 cask "google-chrome"
 cask "firefox"
 cask "alfred"  # check license
-cask "bartender"  # check licensen
+cask "bartender"  # check license
 cask "box-sync"
 cask "discord"
 cask "docker"
@@ -50,7 +49,7 @@ cask "scroll-reverser"
 cask "signal"
 cask "slack"
 cask "spotify"
-cask "telegram"
+cask "telegram-desktop"
 cask "the-unarchiver"
 cask "protonmail-bridge"
 cask "visual-studio-code"
@@ -60,4 +59,4 @@ cask "vlc"
 cask "vnc-viewer"
 cask "wireshark"
 cask "zoom"
-
+# cask "paragon-ntfs"  # requires additional manual app installation
