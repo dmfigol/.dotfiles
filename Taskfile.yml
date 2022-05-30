@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  brew:
+    desc: Install and upgrade all dependencies from the Brewfile
+    cmds:
+      - brew bundle --file=homebrew/Brewfile
+
+  update:
+    desc: Run update script
+    cmds:
+      - scripts/update.sh
