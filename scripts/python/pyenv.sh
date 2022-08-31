@@ -12,13 +12,14 @@ function python_install {
   pyenv_global=""
   for python_version in $@
   do
-    if [ `uname` = "Darwin" ] && [ $python_version = "3.6" ]; then
-      # patch for macOS
-      pyenv install -s --patch $python_version:latest < <(curl -sSL $PYENV_MACOS_PATCH_URL)
-    else
+    # if [ `uname` = "Darwin" ] && [ $python_version = "3.6" ]; then
+    #   # patch for macOS
+    #   pyenv install -s --patch $python_version:latest < <(curl -sSL $PYENV_MACOS_PATCH_URL)
+    # else
       pyenv install -s $python_version:latest
-    fi
+    # fi
     pyenv_global+="$(pyenv versions --bare | grep ${python_version} | tail -1) "
+    python$python_version -m pip install -U pip
   done
   pyenv global $pyenv_global;
 }

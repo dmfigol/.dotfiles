@@ -8,8 +8,8 @@ if [ `uname` = "Darwin" ]; then
     alias oracle="cd /Applications/SQLDeveloper.app/Contents/Resources/sqldeveloper/ && JAVA_HOME= sh sqldeveloper.sh"
 fi
 
-alias cat='rich --theme=monokai'
-alias more='rich --theme=monokai --pager'
+alias rcat='rich --theme=monokai'
+alias rmore='rich --theme=monokai --pager'
 
 # function script_dir {
 #     echo `SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"`

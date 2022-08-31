@@ -3,13 +3,13 @@ This is a set of my dotfiles and scripts to bootstrap a new system (MacOS/Linux)
 First install [Homebrew](https://brew.sh/) and clone the repo:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-git clone https://github.com/dmfigol/dotfiles.git
+git clone https://github.com/dmfigol/.dotfiles.git
 ```
 Homebrew installs not only homebrew itself, but also xcode dev tools, which are required for using git and some other programs.  
-You might want to modify some scripts in the repo. For example, `~/dotfiles/homebrew/Brewfile` (contains packages to be installed with homebrew and cask) or `~/dotfiles/scripts/node/default-packages` (packages to be installed with Node.js).  
+You might want to modify some scripts in the repo. For example, `~/.dotfiles/homebrew/Brewfile` (contains packages to be installed with homebrew and cask) or `~/.dotfiles/scripts/node/default-packages` (packages to be installed with Node.js).  
 Lastly, run `bootstrap.sh` which comes with this repo:  
 ```bash
-~/dotfiles/scripts/bootstrap.sh
+~/.dotfiles/scripts/bootstrap.sh
 ```  
 
 ## Older

@@ -14,7 +14,7 @@ brew upgrade
 $ZSH/tools/upgrade.sh
 zsh -c "pipx upgrade-all"
 # pipx upgrade-all
-poetry self update
+poetry self update --preview
 git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull
 git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions pull
 exit 0

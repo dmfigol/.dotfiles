@@ -1,7 +1,7 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-export DOTFILES_PATH="${HOME}/dotfiles"
+export DOTFILES_PATH="${HOME}/.dotfiles"
 source "$DOTFILES_PATH/shell/env_vars.sh"
 
 (( ${+commands[direnv]} )) && emulate zsh -c "$(direnv export zsh)"
@@ -124,3 +124,6 @@ unsetopt prompt_cr prompt_sp
 # GCP SDK
 if [ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
 if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
