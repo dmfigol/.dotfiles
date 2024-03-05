@@ -1,12 +1,13 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PIPENV_VENV_IN_PROJECT=1
-export CLOUDSDK_PYTHON="${HOME}/.pyenv/shims/python3.6"
 export EDITOR=vim
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PYENV_ROOT="${HOME}/.pyenv"
 export PATH="${HOME}/.local/bin:${NPM_PACKAGES}/bin:${HOME}/.poetry/bin:${PYENV_ROOT}/bin:${HOME}/go/bin:/usr/local/opt/ruby/bin:$PATH"
+export AWS_PAGER=
 export MANPATH="$NPM_PACKAGES/share/man:$MANPATH"
+export POWERLEVEL9K_INSTANT_PROMPT=quiet
 if [ `uname` = "Darwin" ]; then
     export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
     export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
