@@ -18,3 +18,20 @@ Previously it was suggested to use this [gist](https://gist.github.com/dmfigol/1
 curl -SL https://gist.githubusercontent.com/dmfigol/104ac3637c1a29a97c4beb5c953dbe99/raw/b550a86077721296f942a8b978db55f925b2f079/bootstrap-mac | bash
 ```  
 This was required because on MacOS git doesn't work until you install Xcode dev tools. However, I have recently discovered that homebrew install devtools.
+
+
+## Manual setup
+### Alfred
+- Preferences migrated from `/Users/dmfigol/Library/Application\ Support/Alfred/Alfred.alfredpreferences`, set in **Advanced -> Set preferences folder**. More info [here](https://www.alfredapp.com/help/advanced/sync/)
+- Workflows:
+    - [firefox assistant](https://github.com/deanishe/alfred-firefox)
+    - [spotify mini player](https://alfred-spotify-mini-player.com/setup/)
+    - [timezones](https://github.com/jaroslawhartman/TimeZones-Alfred)
+    - custom ones manually exported
+
+### SecureCRT
+- settings
+- sessions
+
+### iterm
+- settings
