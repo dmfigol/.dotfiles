@@ -3,9 +3,15 @@
 DOTFILES_PATH="${HOME}/.dotfiles"
 # TODO: check if .zshrc is correct and if not, remove it
 if [ -f ~/.zshrc ] && [ ! -L ~/.zshrc ]; then
-    mv ~/.zshrc ~/.zshrc.old
+  rm .zshrc
 fi
 ln -ns "${DOTFILES_PATH}/shell/.zshrc" ~/.zshrc
+
+if [ -f ~/.zprofile ] && [ ! -L ~/.zprofile ]; then
+  rm .zprofile
+fi
+ln -ns "${DOTFILES_PATH}/shell/.zprofile" ~/.zprofile
+
 
 if [ ! -d ~/.oh-my-zsh ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended

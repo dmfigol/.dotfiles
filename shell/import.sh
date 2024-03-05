@@ -9,6 +9,6 @@ else
   done
 fi
 
-[ -d "~/.secrets.d" ] && for file in ~/.secrets.d/[0-9]*.*sh; do
+[ -d "${HOME}/.secrets.d" ] && for file in $HOME/.secrets.d/*.*sh; do
   . "$file"
 done

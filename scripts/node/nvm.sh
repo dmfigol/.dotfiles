@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 export NVM_DIR=$HOME/.nvm;
-NVM_INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh"
+NVM_INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh"
 
 . $DOTFILES_PATH/shell/01-utils.sh
 function node_install {
