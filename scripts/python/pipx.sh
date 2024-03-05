@@ -2,7 +2,7 @@
 SCRIPT=$(readlink -f "$0")
 SCRIPT_PATH=$(dirname "$SCRIPT")
 
-PIPX_PYTHON_VERSION=3.9
+PIPX_PYTHON_VERSION="3.9"
 if ! command -v pipx &> /dev/null; then
   python${PIPX_PYTHON_VERSION} -m pip install --user pipx
   python${PIPX_PYTHON_VERSION} -m pipx ensurepath
