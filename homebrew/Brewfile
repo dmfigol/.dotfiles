@@ -4,6 +4,7 @@ tap "adoptopenjdk/openjdk"
 tap "esolitos/ipa"
 tap "aws/tap"
 tap "microsoft/git"
+tap "tofuutils/tap"
 
 # Cloud
 brew "awscli"
@@ -12,6 +13,7 @@ brew "copilot-cli"
 brew "cfn-lint"
 brew "cloudformation-guard"
 brew "tfenv"
+brew "tofuenv"
 brew "tflint"
 brew "pulumi"
 

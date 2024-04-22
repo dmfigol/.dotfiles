@@ -1,12 +1,19 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 export DOTFILES_PATH="${HOME}/.dotfiles"
-source "$DOTFILES_PATH/shell/env_vars.sh"
+. "$DOTFILES_PATH/shell/env_vars.sh"
 
 (( ${+commands[direnv]} )) && emulate zsh -c "$(direnv export zsh)"
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  . "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 (( ${+commands[direnv]} )) && emulate zsh -c "$(direnv hook zsh)"
 
@@ -137,3 +144,7 @@ export PATH="$PNPM_HOME:$PATH"
 
 # bun completions
 [ -s "/Users/dmfigol/.bun/_bun" ] && source "/Users/dmfigol/.bun/_bun"
+. "$HOME/.cargo/env"
+
+# krew path
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

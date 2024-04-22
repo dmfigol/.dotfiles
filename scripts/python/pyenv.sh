@@ -11,8 +11,9 @@ function python_install {
   for python_version in $@
   do
     pyenv install -s $python_version:latest
-    pyenv_global+="$(pyenv versions --bare | grep ${python_version} | tail -1) "
-    python$python_version -m pip install -U pip
+    VERSION_SPEC=$(pyenv versions --bare | grep ${python_version} | tail -1)
+    pyenv_global+="${VERSION_SPEC} "
+    pyenv local ${VERSION_SPEC}
   done
   pyenv global $pyenv_global;
 }
